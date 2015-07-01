@@ -1,0 +1,419 @@
+ <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top visible-xs">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Jonathan Miller</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a ng-click="scrollTo('profile')">Profile</a></li>
+            <li><a ng-click="scrollTo('skills')">Skills</a></li>
+            <li><a ng-click="scrollTo('experience')">Experience</a></li>
+            <li><a ng-click="scrollTo('education')">Education</a></li>
+          </ul>
+       
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row hidden-xs">
+        <div class="col-md-3 col-sm-3">
+          <div class="profile_picture">
+            <img src="assets/jm.png" width="150" height="178" class="imgc-circle" alt="" title="" />
+           </div>
+        </div>
+        <div class="col-md-9 col-sm-9">
+          <div class="pull-right">
+            <div class="myname pull-right">JONATHAN
+              <div class="mysurname">MILLER</div></div>
+            <div class="pull-right byline"><h4>Javascript Focused Full-Stack Developer</h4></div>
+          </div>
+        </div>
+      </div>
+      <div class="row contact hidden-xs">
+      <div class="pull-right">
+        <span>Email: <a href="mailto:jondbm@gmail.com">jondbm@gmail.com</a></span>
+        <span>Sample code: <a href="https://github.com/jondbm">github.com/jondbm</a></span>
+      </div>
+    </div>
+
+    <div class="row contact-xs visible-xs">
+      <div class="pull-right">
+        <span>Email: <a href="mailto:jondbm@gmail.com">jondbm@gmail.com</a></span>
+        <span class="visible-xs"><br /></span>
+        <span>Sample code: <a href="https://github.com/jondbm">github.com/jondbm</a></span>
+      </div> 
+    </div>
+    
+
+
+    <div class="row">
+      <div class="col-md-6 col-sm-6">
+        <div class="skillset">
+          <a name="skills"></a>
+            <h2>Technical Skills</h2>
+            <p>
+            <ul>
+              <li><b>Javascript</b><br />AngularJS, React, jQuery, NodeJS, Backbone</li>
+              <li><b>Front-End</b> <br />HTML5, CSS3, Responsive Design</li>
+              <li><b>Back-End</b><br />PHP (PHP5, Laravel, Kohana, CodeIgniter, Zend), MySQL,  Django/Python.</li>
+              <li><b>Linux/Apache server administration</b></li>
+              <li><b>Agile/SCRUM/Continuous Deployment</b><br />Git, Subversion</li>
+              <li><b>Cross-platform Mobile Development</b><br />Titanium, CoronaSDK,  Phonegap/Cordova, with AppStore and Google Play deployment.</li>
+              <li><b>Social Media SDK and API integration:</b><br />Facebook, Twitter</li>
+              <li><b>Design software:</b><br />Photoshop, Illustrator</li> 
+            </ul> 
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-6">
+        <div class="summary">
+          <a name="profile"></a>
+             <h2>Personal Profile</h2>
+            <p>I'm a full-stack development contractor specialising in Javascript (primarily AngularJS), with over ten years experience developing for high profile creative agencies and media organisations.</p>
+            <a ng-click="scrollTo('more')"><button class="morebutton">Scroll to learn more</button></a>
+              <div style="height:40px;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row divider">
+        </div>
+        <a name="more"></a>
+        <div class="row">
+          <div class="col-md-12">  
+            <a name="experience"></a>
+            <h2>Experience Highlights</h2>
+            <div class="logos hidden-xs">
+            <div class="logo" id="logo-samsung"></div>
+            <div class="logo" id="logo-adidas"></div>
+            <div class="logo" id="logo-disney"></div>
+            <div class="logo" id="logo-bbc"></div>
+            <div class="logo" id="logo-quidco"></div>
+            <div class="logo" id="logo-sony"></div>
+          </div>
+          <div style="clear:both;"/> 
+          <div class="buttons">
+            <button class="morebutton projects" ng-click="tabFlip('commercial');">Commercial Clients</button>
+            <button class="morebutton projects" ng-click="tabFlip('private');">Personal Projects / Private Clients</button>
+            <a ng-click="tabFlip('portfolio');"><button class="morebutton portfolio xl hidden-xs">View Portfolio</button><button class="morebutton portfolio visible-xs">View Portfolio</button></a>
+          </div>
+          <div class="flip-container commercial" id="flip-toggle">
+          <div class="flipper">
+            <div id="portfolio" ng-show="showPortfolio">
+
+        
+            <h2>Live URLs:</h2>
+            <p>
+              <ul>
+                <li><a href="http://www.streetsofspain.com" target="_blank">Streets of Spain</a></li>
+                <li><a href="http://www.adidas.com/uk/apps/brafinder/" target="_blank">Adidas bra finder</a></li>
+                <li><a href="http://www.endemol.com" target="_blank">Endemol</a></li>
+                <li><a href="http://www.whatdiscountcode.co.uk" target="_blank">WhatDiscountCode.co.uk</a></li>
+              
+                <li><a href="http://www.mediatrust.org" target="_blank">Media Trust</a></li>
+                <li><a href="https://www.sonyatv.com/en-uk/index.php/articles/artist_writer" target="_blank">Sony-ATV Writers</a></li>
+              </ul>
+            </p>
+
+            <h2>Project Highlights</h2>
+              <table border="0" cellspacing="0" cellpadding="0" id="portfolio-table">
+                <tr>
+                <td><a href="http://www.streetsofspain" target="_new"><img src="assets/logos/streetsofspain-thumb.png" width="200" height="144" border="0" alt="Streets of Spain"></a></td>
+                <td><div class="portfolio-spacing"></div></td>
+                <td class="main"><b>Streets of Spain festival</b><br />
+                  <span class="desc">Refreshed and ammended the festival's site for 2015 including reworking CSS3 animations, recoding HTML templates and rewriting Laravel PHP code.</span>
+                </td>
+              </tr>
+              <tr>
+                <td><a href="http://www.likuco.com" target="_new"><img src="assets/logos/app-thumb.png" width="200" height="144" border="0" alt="Likuco Apps"></a></td>
+                <td><div class="portfolio-spacing"></div></td>
+                <td class="main"><b>Likuco App Development</b><br />
+                  <span class="desc">Built a series of apps for Android and iOS using Javascript and Lua. Blockodile (a children's puzzle game released Summer 2015), Make Me Famous (a celebrity drawing game), Same Days Off (a shift-management time planner) and Liku (a dating app).</span>
+                </td>
+              </tr>
+              <tr>
+                <td><a href="www.adidas.com/uk/apps/brafinder/" target="_new"><img src="http://www.jonsites.co.uk/images/adidas_screenshot.gif" width="200" height="144" border="0" alt="Adidas"></a></td>
+                <td><div class="portfolio-spacing"></div></td>
+                <td class="main"><b>Adidas - brafinder product selector</b><br />
+                  <span class="desc">Led a team building this AngularJS-based cross-platform product selector site, using jQuery, HTML5, CSS3, SASS and REST data retrieval.</span>
+                </td>
+              </tr>
+              <tr>
+              <tr>
+                <td><a href="http://www.whatdiscountcode.co.uk" target="_new"><img src="http://www.jonsites.co.uk/images/whatdiscountcode_screenshot.gif" width="200" height="144" border="0" alt="WhatDiscountCode.co.uk"></a></td>
+                <td><div class="portfolio-spacing"></div></td>
+                <td class="main"><b>WhatDiscountCode.co.uk</b><br />
+                  <span class="desc">Responsible for the complete build of this Kohana-based MVC voucher code site providing access to thousands of retailer discounts. The site includes modules to process XML feeds into content, register and manage users and user generated content, Facebook integration and an advanced product scraping module for purchase sharing.</span>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2"><br /></td>
+              </tr>
+              <tr>
+                <td><a href="http://www.quidco.com" target="_new"><img src="http://www.jonsites.co.uk/images/quidco_screenshot.gif" width="200" height="144" border="0" alt="Quidco"></a></td>
+                <td><div class="portfolio-spacing"></div></td>
+                <td class="main"><b>Quidco</b><br />
+                  <span class="desc">Worked with the UK's leading cashback site to help convert legacy XML modules into a modern MVC framework, as well as developing an OAuth integration payment module for a rewards scheme and working on general website maintenance.</span>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2"><br /></td>
+              </tr>
+                <tr>
+                <td><a href="http://www.comparethebluray.com" target="_new"><img src="http://www.jonsites.co.uk/images/comparethebluray_screenshot.gif" width="200" height="144" border="0" alt="CompareTheBluRay"></a></td>
+                <td><div class="portfolio-spacing"></div></td>
+                <td class="main"><b>CompareTheBluRay.com</b><br />
+                  <span class="desc">This Kohana-based Blu-Ray price comparison and deals site incorporated bespoke screen scraping and XML feed processing as well as a CMS for user-generated reviews.</span>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2"><br /></td>
+              </tr>
+              <tr>
+                <td><a href="http://www.mediatrust.org" target="_new"><img src="http://www.jonsites.co.uk/images/mediatrust_screenshot.gif" width="200" height="144" border="0" alt="Media Trust"></a></td>
+                <td><div class="portfolio-spacing"></div></td>
+                <td class="main"><b>Outside Line</b><br />
+                  <span class="desc">Work at Outside Line included maintenance work and new module development for <a href="http://www.mediatrust.org">Media Trust</a>, a CodeIgniter based project as well as a viral Facebook campaign for Diesel.</span>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2"><br /></td>
+              </tr>
+              <tr>
+                <td><a href="http://www.endemol.com" target="_new"><img src="http://www.jonsites.co.uk/images/endemol_screenshot.gif" width="200" height="144" border="0" alt="Endemol"></a>
+                  <br /><br />
+                  <a href="http://www.propeller4film.com"><img src="http://www.jonsites.co.uk/images/propeller_screenshot.gif" width="200" height="144" border="0" alt="Propeller4Film"></a>
+                </td>
+                <td><div class="portfolio-spacing"></div></td>
+                <td class="main"><b>Endemol</b><br />
+                  <span class="desc">While working at Endemol was responsible for the HTML and PHP builds of large media sites including Endemol.com, short film site <a href="http://propeller4film.com">Propeller4Film</a> and the first global Big Brother site at BigBrother.com. These sites were developed using the Kohana PHP5 MVC framework.<br /></span>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2"><br /></td>
+              </tr>
+              <tr>
+                <td><a href="http://www.sonyatv.com" target="_new"><img src="http://www.jonsites.co.uk/images/sonyatv_screenshot.gif" width="200" height="144" border="0" alt="Sony-ATV"></a></td>
+                <td><div class="portfolio-spacing"></div></td>
+                <td class="main"><b>Sony-ATV Music Publishing</b><br />
+                  <span class="desc">Developed a writers roster site at <a href="https://www.sonyatv.com/en-uk/index.php/articles/artist_writer">Sony-ATV Writers</a> providing Sony-ATV's site users with a searchable index of songwriters, each with their own detailed profile page.</span>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2"><br /></td>
+              </tr>
+            <tr>
+                <td><a href="http://www.shinyshelf.co.uk" target="_new"><img src="http://www.jonsites.co.uk/images/shinyshelf2_screenshot.gif" width="200" height="144" border="0" alt="Shiny Shelf"></a></td>
+                <td><div class="portfolio-spacing"></div></td>
+                <td class="main"><b>Shiny Shelf</b><br />Shiny Shelf required writers from around the world to be able to upload articles for display on the site, along with a message board forum, voting facility, and a completely customisable interface. The site was built using PHP and MySQL and at its peak was one of the most prominent science fiction and pop culture sites in the UK.</td>
+              </tr>
+              <tr>
+                <td colspan="2"><br /></td>
+              </tr>
+              <tr>
+                <td><a href="http://www.lewisbradleyofficial.com" target="_new"><img src="http://www.jonsites.co.uk/images/lewisbradley_screenshot.jpg" width="200" height="144" border="0" alt="Lewis Bradley"></a></td>
+                <td><div class="portfolio-spacing"></div></td>
+                <td class="main"><b>Lewis Bradley</b><br />Fresh from reaching the final of the BBC's 'Any Dream Will Do', actor and singer Lewis Bradley required a website to provide a focal point for updates for fans during his period starring as Joseph at the London Palladium in Spring 2008. I built a site containing a forum, photographs and streaming video clips to provide an official communication channel to Lewis's rapidly growing fanbase.
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2"><br /></td>
+              </tr>
+              <tr>
+                <td><img src="http://www.jonsites.co.uk/images/kelkay_screenshot.gif" width="200" height="144" border="0" alt="Kelkay"></td>
+                <td><div class="portfolio-spacing"></div></td>
+                <td class="main"><b>Kelkay</b><br />Kelkay needed an easily updateable site to enable retailers to directly source garden rocks, pebbles and stones. The site used AJAX technology to dynamically change content without refreshing the users page, and mixed Flash animation with a MySQL database and content management system to create an exciting online catalogue.</td>
+              </tr>
+              <tr>
+                <td colspan="2"><br /></td>
+              </tr>
+              <tr>
+                <td><img src="http://www.jonsites.co.uk/images/eve_screenshot.jpg" width="200" height="144" border="0" alt="Eve magazine"></td>
+                <td><div class="portfolio-spacing"></div></td>
+                <td class="main"><b>Eve magazine video bumpers</b><br />The website for Eve Magazine required their Channel 5 sponsorship bumpers for 'Grey's Anatomy' to be converted into Flash video and placed on the site. I edited the videos together, compressed them to a size that would stream quickly and easily and embedded them into the site to make the content as seamless as possible.</td>
+              </tr>
+              <tr>
+                <td colspan="2"><br /></td>
+              </tr>
+              <tr>
+                <td><img src="http://www.jonsites.co.uk/images/lewisdirect_screenshot.jpg" width="200" height="144" border="0" alt="LEWIS Direct"></td>
+                <td><div class="portfolio-spacing"></div></td>
+                <td class="main"><b>LEWIS Direct</b><br />Global public relations firm LEWIS PR required an online E-commerce site to provide the first one-stop shop for PR services in the UK. The site was a full database-backed e-commerce site incorporating a calendar based booking system, embedded Flash videos and selectable photography image bank.</td>
+              </tr>
+              <tr>
+                <td colspan="2"><br /></td>
+              </tr>
+                <tr>
+                <td><a href="http://www.jonsites.co.uk/http://www.ttuk.com" target="_new"><img src="http://www.jonsites.co.uk/images/ttuk_screenshot.gif" width="200" height="144" border="0" alt="Thring Townsend"></a></td>
+                <td><div class="portfolio-spacing"></div></td>
+                <td class="main">
+                  <b>Thring Townsend</b><br />Legal firm Thring Townsend required their existing Flash site to be recoded into W3C Standards compliant XHTML/CSS based ASP pages, optimised to be search engine friendly and compliant with the Disability Discrimination Act while maintaining the functionality of the Flash version without loss of speed or usability. Within a week of the site launching, it was the top Google search result for numerous related terms, indicating the success of the optimisation.
+                </td>
+              </tr>
+              
+              <tr>
+                <td colspan="2"><br /></td>
+              </tr>
+              <tr>
+                <td><!--a href="http://www.partydating.co.uk" target="_new"--><img src="http://www.jonsites.co.uk/images/partydating_screenshot.gif" width="200" height="144" border="0" alt="PartyDating"><!--/a--></td><td><div class="portfolio-spacing"></div></td><td class="main"><b>PartyDating</b><br />PartyDating was the UK's original social dating site, the perfect place for single people to meet and arrange nights out. I built the site using PHP in conjunction with a MySQL database, building in a Content Management System to make the site easily updateable.</td></tr>
+              <tr>
+                <td colspan="2"><br /></td>
+              </tr>
+              <tr>
+                <td><!--a href="http://www.teenmusic.co.uk" target="_new"--><img src="http://www.jonsites.co.uk/images/teenmusic_screenshot.gif" width="200" height="144" border="0" alt="TEENMUSIC.CO.UK"><!--/a--></td>
+                <td><div class="portfolio-spacing"></div></td>
+                <td class="main"><b>TEENMUSIC.CO.UK</b><br />TEENMUSIC.CO.UK was a pop music portal for teenagers and students that demanded a wide range of features including a simple interface, a voting system, a message board, and a facility for maintaining news and reviews. I built the site using Chilisoft ASP and CSS in conjunction with a MySQL database, including a bespoke Content Management System.</td>
+              </tr>
+              <tr>
+                <td colspan="2"><br /></td>
+              </tr>
+              </table>
+            </div>
+
+
+                </div>
+                <div style="clear:both;"></div>
+                <div class="front">
+   
+                <h3>Commercial Clients</h3>
+                <div class="job">
+                  <div class="jobtitle"><b>Front-End Developer</b>, Isobar (March 2015)</div>
+                  <div class="jobdesc">
+                    Refresh and amends to www.streetsofspain.com, using HTML5, CSS3 and PHP with Laravel.
+                  </div>
+                </div>
+                <div class="job">
+                  <div class="jobtitle"><b>Full Stack Developer</b>, CompareAsia (November 2014 - January 2015)</div>
+                  <div class="jobdesc">
+                     Coding redesigns of modules of price comparison sites MoneyMax.ph and MoneyHero.com.hk, using Javascript, responsive mobile-first HTML5 and PHP.
+                  </div>
+                </div>
+               
+                <div class="job">
+                  <div class="jobtitle"><b>Javascript Developer</b>, Start JG  (October 2013 - April 2014)</div>
+                  <div class="jobdesc">
+                  Led development of a cross-platform product selector app for Adidas using AngularJS and CSS3: www.adidas.com/uk/apps/brafinder.<br /><br />
+                Also built an Samsung Galaxy Tablet Finder tablet app for in-store use,
+                An iPad application version of Barclays 'Your Bank' site (providing an in-bank survey system using local storage APIs and interacting with secure remote servers) and an Adidas RFID reader application for in-store use.
+                <br /><br />
+                These applications were all written in AngularJS, utilised CSS3 (SASS) stylesheets, with the mobile applications being AngularJS SPAs within a Phonegap wrapper.
+                  </div>
+                </div>
+                <div class="job">
+                  <div class="jobtitle"><b>Web Developer</b>, Quidco  (May 2012-July 2013 & June 2010 - October 2010)</div>
+                  <div class="jobdesc">
+                      During two contracts with the UK's No. 1 cashback site (a heavy traffic site with millions of daily users) worked in a fully Agile SCRUM-based environment with code continuously deployed and revised. 
+                      <br /><br />
+                Specific tasks included developing an OAuth-based contacts importer and referral system, redeveloping Quidco's main website from a custom site using XSLT into a MVC based site using Smarty templates and Zend Framework modules, API development, bug-fixing and maintenance, rewrite of the claims management area and integrating the site with Google Apps.<br /><br />
+                This was a full-stack role using PHP, Javascript and HTML.
+                    </div>
+                </div>
+                <div class="job">
+                  <div class="jobtitle"><b>PHP/Facebook Development</b>, TBG London (April 2012)</div>
+                  <div class="jobdesc">
+                      Built the 'Support Team GB' Facebook app for The Sun newspaper's London 2012 Olympics coverage, using Twitter and SMS APIs and feed integration.
+                    </div>
+                </div>
+             
+                  <div class="job">
+                    <div class="jobtitle"><b>Web Developer</b>, Outside Line  (January 2010 - May 2010)</div>
+                    <div class="jobdesc">
+                       CodeIgniter-based Web development on new sites for Media Trust, the Community Channel, and Outside Line's custom CMS. Also Facebook Javascript SDK application development for Diesel 'Be Stupid' campaign.
+                    </div>
+                </div>
+                <div class="job">
+                    <div class="jobtitle"><b>Senior Developer</b>, Endemol  (December 2008 - November 2009)</div>
+                    <div class="jobdesc">
+                     Developing full site builds (HTML, Javascript, PHP) and maintenance for the world's largest independent TV production company. Responsible for the coding of several high profile projects including a short film portal, the international Big Brother site and the main Endemol website www.endemol.com.
+                    </div>
+                </div>
+     
+ 
+                <div class="job">
+                  <div class="jobtitle"><b>PHP Consultant</b>, Sony Music Publishing  (November 2007 -  June 2008)</div>
+                  <div class="jobdesc">
+                    The contract with Sony involved general page development and amends to www.sonyatv.com, including reversioning pages for different languages and the development of a large AJAX-based writers roster and tour guide information microsite. Involved planning and designing site from initial creative brief, building with PHP, MySQL and AJAX.
+                    </div>
+                </div>
+                
+                <div class="job">
+                  <div class="jobtitle"><b>Web Manager</b>, Lewis PR - http://www.lewispr.com (November 2005 - November 2006)</div>
+                  <div class="jobdesc">
+                    Developing and overseeing a wide range of internal and external projects for a global PR agency, working with clients such as The Conservative Party, BT and the RAF.
+                Working as part of a small team, duties and responsibilities included building and maintaining the company intranet, full site builds (such as www.octanepr.com) SEO, blog creation (Wordpress,Typepad), building web interfaces for viral campaigns, building and project managing LEWIS Direct (the first full featured PR e-Commerce site), developing an internal search engine, video editing and Flash video production.
+                  </div>
+                </div>
+                 <div class="job">
+                  <div class="jobtitle">Career highlights before November 2005:</div>
+                  <div class="jobdesc">
+                   <ul>
+                   <li> Dec 2003-October 2004: Interactive Assistant Producer, BBC Skillswise</li>
+                   <li>
+                Dec 2001-Dec 2003 : Interactive Researcher, BBC Schools</li>
+                <li>
+                 Dec 1999-June 2001: Web Developer, Wunderman advertising agency.</li>
+               </ul>
+                More information on these roles available on request.
+                  </div>
+                </div>
+              </div>
+              <div class="back">
+                <h3>Personal Projects / Private Clients</h3>
+                <div class="job">
+                  <div class="jobtitle"><b>Javascript Mobile Application Developer</b>, Likuco (April 2014 - Present)</div>
+                  <div class="jobdesc">
+                    Built three mobile apps for iOS and Android platforms: a children's puzzle game, a Facebook-integrated drawing game and a dating app. These were built using Javascript via Titanium and Corona SDKs.
+                  </div>
+                </div>
+
+                <div class="job">
+                  <div class="jobtitle"><b>Gap year</b>, Walt Disney World, Florida  (January 2011 - February 2012)</div>
+                  <div class="jobdesc">
+                      Took a year out to work in the USA for The Walt Disney Company in Orlando in order to broaden business knowledge and gain more customer-facing experience. In spare time during this period built MVC-based sites WhatDiscountCode.co.uk - a discount shopping website, TotalSocial.com - a site for Disney Cast Members to co-ordinate their schedules and plan their social lives, and price comparison site CompareTheBluRay.com.
+                    </div>
+                  </div>
+
+                  <div class="job">
+                    <div class="jobtitle"><b>Freelance Web Development</b>, private clients (December 2006 - November 2008)</div>
+                    <div class="jobdesc">
+                     Set up a web agency to provide development and consultancy services to private clients including full site developments, e-commerce projects, ongoing maintenance, search engine optimisation work and design and usability overhauls.
+                      <br /><br />Also developed an elaborate 'extranet dashboard' and reporting site for Lewis PR in 2007 which provided a complete on-line PR campaign management system, using PHP, MySQL and Flash.
+                      <br /><br />
+                      <a ng-click="tabFlip('portfolio');">My portfolio</a> showcases some of the sites built during this period.
+                    </div>
+                </div>
+              </div>
+            </div>
+    
+           <div class="row divider">
+                </div>
+          <div class="row">
+            <div class="col-md-12" id="education">  
+              <div style="margin-top:20px;"></div>
+              <a name="education"></a>
+                  <h2>Education</h2>
+                  <ul>
+                  <li><b>University College London</b> BA History (2:1), </li>
+                  <li>3 A-Levels, 2 A-S Levels, 11 GCSEs.</li>
+                </div>
+          </div>
+          <div class="row divider">
+          </div>
+          <div class="row">
+            <div class="col-md-12" id="outside">  
+              <h2>And Outside Work...</h2>
+              <ul>       
+               <li>I'm a keen traveller and have explored extensively around the USA, Europe, Asia and Australia.</li>
+             <li>I spent a year living and working in Walt Disney World in Florida as a UK Cultural Representative.</li>
+              <li>I've written three professionally published Doctor Who novels.</li>
+              <li>And I love drawing, animation, filmmaking and skiing.</li>
+            </div>
+          </div>
+        </div>
